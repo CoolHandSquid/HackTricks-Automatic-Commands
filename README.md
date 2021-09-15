@@ -39,8 +39,8 @@ Where other enumeration tools are fire and forget (sometimes running hundereds o
 ## Build and Kickoff
 
 ```
-git clone https://github.com/CoolHandSquid/TmuxRecon.git
-cd TmuxRecon
+git clone https://github.com/CoolHandSquid/HAC.git
+cd HAC
 ./Build.sh
 
 cd /dir/you/want/to/enumerate/from
