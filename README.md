@@ -1,5 +1,5 @@
 <h1 align="center">HackTricks Automatic Commands "HAC"</h1>
-<p align="center">HackTricks Automatic Commands (HAC) is an enumeration platform powered by [HackTricks](https://book.hacktricks.xyz)!</p>
+<p align="center">HackTricks Automatic Commands (HAC) is an enumeration platform powered by <a href="https://book.hacktricks.xyz">HackTricks!</a></p>
 <p align="center">
   <a><img src="https://img.shields.io/badge/price-FREE-0098f7.svg" height="20"/></a>
   <a><img src="https://img.shields.io/github/license/mashape/apistatus.svg" height="20"/></a>
