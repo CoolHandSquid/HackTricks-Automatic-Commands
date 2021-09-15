@@ -6,7 +6,7 @@ HackTricks Automatic Commands (HAC) is an enumeration platform powered by [HackT
   <a><img src="https://img.shields.io/badge/OS-Kali-yellow.svg" height="20"/></a>
   <a><img src="https://img.shields.io/badge/python-3.7%2B-blue.svg" height="20"/></a>
   <a><img src="https://img.shields.io/badge/version-1.0.0-lightgrey.svg" height="20"/></a>
-  <a href="https://twitter.com/intent/tweet?text=Automate%20the%20scanning%20and%20enumeration%20of%20machines%20while%20maintaining%20complete%20control%20over%20scans%20shot%20to%20targets.%20All%20the%20while%20applying%20the%20speed%20and%20convenience%20of%20tmux%21&url=https://github.com/CoolHandSquid/TmuxRecon&via=CoolHandSquid&hashtags=infosec,oscp,HackTheBox,kalilinux,pentesting"><img src="https://img.shields.io/twitter/url/http/shields.io.svg?style=social" alt="tweet" height="20"></a>
+  <a href="https://twitter.com/intent/tweet?text=I%20love%20automating%20the%20scanning%20and%20enumeration%20capabilities%20I%20have%20with%20the%20enumeration%20platform%20powered%20by%20https%3A%2F%2Fbook.HackTricks.xyz%21%20It%20is%20so%20convenient%21&url=https://github.com/CoolHandSquid/HAC&via=CoolHandSquid&hashtags=infosec,oscp,HackTheBox,kalilinux,pentesting"><img src="https://img.shields.io/twitter/url/http/shields.io.svg?style=social" alt="tweet" height="20"></a>
 </p>
 
 ## Contents
@@ -32,7 +32,7 @@ Where other enumeration tools are fire and forget (sometimes running hundereds o
 - are able to limit your footprint
 - end with a convenient list of all scans sent from HAC to the target
 - will gain more profitable experience on training boxes (OSCP, HTB, TryHackMe)
-- can approach network penetration tests with confidence 
+- can approach network penetration tests with confidence and reliability
 
 ## Demo
 
