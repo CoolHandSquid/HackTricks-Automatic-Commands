@@ -27,10 +27,10 @@ HackTricks Automatic Commands (HAC) is an enumeration platform powered by [HackT
 ## Philosophy
 
 Where other enumeration tools are fire and forget (sometimes running hundereds of scans without your control), HAC is semi-automatic, meaning that you initiate every scan. This is a valuable trait becasue you-
-A) are able to limit your footprint
-B) end with a convenient list of all scans sent from HAC to the target
-C) will gain more profitable experience on training boxes (OSCP, HTB, TryHackMe)
-D) can approach network penetration tests with confidence 
+- are able to limit your footprint
+- end with a convenient list of all scans sent from HAC to the target
+- will gain more profitable experience on training boxes (OSCP, HTB, TryHackMe)
+- can approach network penetration tests with confidence 
 
 ## Demo
 
