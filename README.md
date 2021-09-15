@@ -70,22 +70,49 @@ HAC x.x.x.x -i tmux #Chose "tmux", "tilix", or "terminator" as your interface.
 - Run multiple commands from a table at once by splitting the command numbers with commas. EX: 0,1,2 (Spaces and periods work aswell)
 
 ## How To Contribute
-What makes HackTricks Automatic Commands so powerful is the People! You can help contribute by sending a PR to book.hacktricks.xyz (into an existing HackTricks Automatic Commands code block or create your own), or sending and email to coolhandsquid@gmail.com.
+What makes HackTricks Automatic Commands so powerful is the People! You can help contribute by sending a PR to book.hacktricks.xyz (into an existing HackTricks Automatic Commands yaml code block or create your own), or sending and email to coolhandsquid@gmail.com. Simply follow this template when creating your own. Notice that
+- The title must be correct (It is used for parsing)
+- Each entry has a different name
+- Each entry has either a "Note" or a "Command" section. A Command section will get executed, where a Note section will only be read to screen
+```
+## HackTricks Automatic Commands
+
+```text
+Protocol_Name: DNS    #Protocol Abbreviation if there is one.
+Port_Number:  53     #Comma separated if there is more than one.
+Protocol_Description: Domain Name Service        #Protocol Abbreviation Spelled out
+
+Entry_1:
+  Name: Notes
+  Description: Notes for DNS
+  Note: |
+    #These are the commands I run every time I see an open DNS port
+
+    dnsrecon -r 127.0.0.0/24 -n {IP} -d {Domain_Name}
+    dnsrecon -r 127.0.1.0/24 -n {IP} -d {Domain_Name}
+    dnsrecon -r {Network}{CIDR} -n {IP} -d {Domain_Name}
+    dig axfr @{IP}
+    dig axfr {Domain_Name} @{IP}
+    nslookup
+        SERVER {IP}
+        127.0.0.1
+        {IP}
+        Domain_Name
+        exit
+
+    https://book.hacktricks.xyz/pentesting/pentesting-dns
+
+Entry_2:
+  Name: Banner Grab
+  Description: Grab DNS Banner
+  Command: dig version.bind CHAOS TXT @DNS
+```
 
 ### HAC Meta Language
 ```
-Special Characters and Syntax
-Cmd_Command has a few special characters including &&&&, #, ##, ?, and {}.
-
 &&&&
 &&&& Anywhere in the command will split the line and start each command individually in separate tabs.
 Example: whoami &&&& id &&&& ifconfig will open three tabs and run the desired command in each. &&&& is useful if you initially run multiple separate commands every time you see a specific port open.
-
-# and ##
-"#" is for sending yourself notes to another tab.
-"#" can be useful if you don't want to run a command, but you want to give yourself copy-paste notes for manual enumeration.
-Set only the first character of the line to # if you want variables to be evaluated.
-Set the first two characters of the line to ## if you do not want variables to be evaluated.
 
 ?
 "?" is for sending a question to the user. The responce will be set to a numbered variable.
@@ -96,8 +123,23 @@ Example:
 wpscan --url {Web_Proto}://{IP}{1} --enumerate ap,at,cb,dbe && wpscan --url {Web_Proto}://{IP}{1} --enumerate u,tt,t,vp --password {2} -e 
 
 {}
-{} is for grabbing a variable from TmuxRecon.
-Available variables can be viewed in the variables table.
+{} is for grabbing a variable from HAC.
+Available variables are:
+  IP
+  Network
+  CIDR
+  Domain_Name
+  Naming_Context
+  Web_Proto
+  Web_Port
+  Username
+  Password
+  Big_Passwordlist
+  Small_Passwordlist
+  Big_Dirlist
+  Small_Dirlist
+  Tool_Dir
+Current variable values can be viewed in the variables table.
 ```
 ## Supporters
 [![Stargazers repo roster for @coolhandsquid/HAC](https://reporoster.com/stars/coolhandsquid/HAC)](https://github.com/coolhandsquid/HAC/stargazers)
