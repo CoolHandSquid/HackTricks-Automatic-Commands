@@ -71,9 +71,9 @@ HAC x.x.x.x -i tmux #Chose "tmux", "tilix", or "terminator" as your interface.
 
 ## How To Contribute
 What makes HackTricks Automatic Commands so powerful is the People! You can help contribute by sending a PR to book.hacktricks.xyz (into an existing HackTricks Automatic Commands yaml code block or create your own), or sending and email to coolhandsquid@gmail.com. Simply follow this template when creating your own. Notice that
-- The title must be correct (It is used for parsing)
-- Each entry has a different name
-- Each entry has either a "Note" or a "Command" section. A Command section will get executed, where a Note section will only be read to screen
+- the title must be correct (It is used for parsing)
+- each entry has a different name
+- each entry has either a "Note" or a "Command" section. A Command section will get executed, where a Note section will only be read to screen
 ```
 ## HackTricks Automatic Commands
 
