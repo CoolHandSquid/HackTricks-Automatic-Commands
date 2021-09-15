@@ -20,20 +20,20 @@ HackTricks Automatic Commands (HAC) is an enumeration platform powered by [HackT
   - [Supporters](#supporters)
   - [Contact](#contact)
 
-## about
+## About
 
-## demo
+## Demo
 
 ## Kickoff
 
-## methodology
+## Methodology
 
-## protips
+## ProTips
 
-## build
+## Build
 
-## how-to-contribute
+## How To Contribute
 
-## supporters
+## Supporters
 
-## contact
+## Contact
