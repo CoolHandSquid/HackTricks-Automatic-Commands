@@ -1,4 +1,4 @@
-# HAC
+# HackTricks Automatic Commands "HAC"
 HackTricks Automatic Commands (HAC) is an enumeration platform powered by [HackTricks](https://book.hacktricks.xyz)! 
 <p align="center">
   <a><img src="https://img.shields.io/badge/price-FREE-0098f7.svg" height="20"/></a>
