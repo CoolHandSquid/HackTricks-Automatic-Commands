@@ -70,11 +70,20 @@ HAC x.x.x.x -i tmux #Chose "tmux", "tilix", or "terminator" as your interface.
 - Run multiple commands from a table at once by splitting the command numbers with commas. EX: 0,1,2 (Spaces and periods work aswell)
 
 ## How To Contribute
-[![Stargazers repo roster for @coolhandsquid/HAC](https://reporoster.com/stars/coolhandsquid/HAC)](https://github.com/coolhandsquid/HAC/stargazers)
-[![Forkers repo roster for coolhandsquid/HAC](https://reporoster.com/forks/coolhandsquid/HAC)](https://github.com/coolhandsquid/HAC/network/members)
 
 ### HAC Meta Language
 
 ## Supporters
+[![Stargazers repo roster for @coolhandsquid/HAC](https://reporoster.com/stars/coolhandsquid/HAC)](https://github.com/coolhandsquid/HAC/stargazers)
+[![Forkers repo roster for coolhandsquid/HAC](https://reporoster.com/forks/coolhandsquid/HAC)](https://github.com/coolhandsquid/HAC/network/members)
 
 ## Contact
+Please contact me at CoolHandSquid32@gmail.com for contribution, suggestions, and ideas!  
+<p align="center">
+<img src="https://github.com/CoolHandSquid/HAC/blob/main/Images/TireFireLogo1.png" width="200" />  
+</p>
+<p align="center">
+<img src="https://github.com/CoolHandSquid/HAC/blob/main/Images/CoolHandSquid.jpg" width="200" /> 
+</p>
+
+<p align="center"><a href="https://github.com/coolhandsquid/HAC#HAC"><img src="https://github.com/CoolHandSquid/HAC/blob/main/Images/backToTopButton.png" alt="Back to top" height="29"/></a></p>
