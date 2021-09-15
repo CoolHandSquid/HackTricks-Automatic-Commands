@@ -13,9 +13,9 @@ HackTricks Automatic Commands (HAC) is an enumeration platform powered by [HackT
   - [About](#about)
   - [Philosophy](#philosophy)
   - [Demo](#demo)
-    - [tmux](#tmux)
-    - [tilix](#tilix)
-    - [terminator](#terminator)
+    - [Tmux](#tmux)
+    - [Tilix](#tilix)
+    - [Terminator](#terminator)
   - [Build and Kickoff](#build-and-kickoff)
   - [Methodology](#methodology)
   - [ProTips](#protips)
@@ -24,13 +24,11 @@ HackTricks Automatic Commands (HAC) is an enumeration platform powered by [HackT
   - [Contact](#contact)
 
 ## About
-
 - HackTricks Automatic Commands (HAC) is an enumeration platform powered by [HackTricks](https://book.hacktricks.xyz)
 - Updated weekly from "HackTricks Automatic Commands" yaml code blocks in Hacktricks
 - Product of 19% Security Solutions
 
 ## Philosophy
-
 Where other enumeration tools are fire and forget (sometimes running hundereds of scans without your control), HAC is semi-automatic, meaning that you initiate every scan. This is a valuable trait becasue you...
 - are able to limit your footprint
 - end with a convenient list of all scans sent from HAC to the target
@@ -44,11 +42,9 @@ Where other enumeration tools are fire and forget (sometimes running hundereds o
 ### Tilix
 
 ### Terminator
-
 Still in development, coming soon!
 
 ## Build and Kickoff
-
 ```
 git clone https://github.com/CoolHandSquid/HAC.git
 cd HAC
@@ -59,6 +55,16 @@ HAC x.x.x.x -i tmux #Chose "tmux", "tilix", or "terminator" as your interface.
 ```
 
 ## Methodology
+1. Kickoff TmuxRecon (TmuxRecon 10.10.10.5).  
+  ![alt text](https://github.com/CoolHandSquid/HAC/blob/main/Images/TmuxRecon_Kickoff_1.png)
+2. C-b w (Move into the TmuxRecon Session).
+  ![alt text](https://github.com/CoolHandSquid/HAC/blob/main/Images/TmuxRecon_Kickoff_1.5.png)
+3. When prompted, type "Y" to kickoff a Quick, Banner, All-Port, and UDP nmap scan.
+  ![alt text](https://github.com/CoolHandSquid/HAC/blob/main/Images/TmuxRecon_Init_2.png)
+4. Notice that new windows were opened kicking off those scans. Depending upon the ports returned, run scans for those ports.
+  ![alt text](https://github.com/CoolHandSquid/HAC/blob/main/Images/TmuxRecon_InAction_3.png)
+5. Change variables as you need to suit your target (Example: HTTP running on port 8500).
+  ![alt text](https://github.com/CoolHandSquid/HAC/blob/main/Images/TmuxRecon_Variables_6.png)
 
 ## ProTips
 
