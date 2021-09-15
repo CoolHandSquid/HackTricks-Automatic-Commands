@@ -154,4 +154,4 @@ Please contact me at CoolHandSquid32@gmail.com for contribution, suggestions, an
 <img src="https://github.com/CoolHandSquid/HAC/blob/main/Images/CoolHandSquid.jpg" width="200" /> 
 </p>
 
-<p align="center"><a href="https://github.com/coolhandsquid/HAC#HAC"><img src="https://github.com/CoolHandSquid/HAC/blob/main/Images/backToTopButton.png" alt="Back to top" height="29"/></a></p>
+<p align="center"><a href="https://github.com/coolhandsquid/HAC#Contents"><img src="https://github.com/CoolHandSquid/HAC/blob/main/Images/backToTopButton.png" alt="Back to top" height="29"/></a></p>
