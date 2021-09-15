@@ -11,18 +11,20 @@ HackTricks Automatic Commands (HAC) is an enumeration platform powered by [HackT
 
 ## Contents
   - [About](#about)
+  - [Philosophy](#philosophy)
   - [Demo](#demo)
-  - [Kickoff](#Kickoff)
+  - [Build and Kickoff](#build-and-kickoff)
   - [Methodology](#methodology)
   - [ProTips](#protips)
-  - [Build](#build)
   - [How To Contribute](#how-to-contribute)
   - [Supporters](#supporters)
   - [Contact](#contact)
 
 ## About
 
-- HackTricks Automatic Commands (HAC) is an enumeration platform updated weekly from [HackTricks](https://book.hacktricks.xyz).
+- HackTricks Automatic Commands (HAC) is an enumeration platform powered by [HackTricks](https://book.hacktricks.xyz)
+- Updated weekly from "HackTricks Automatic Commands" yaml code blocks in Hacktricks
+- Product of 19% Security Solutions
 
 ## Philosophy
 
@@ -34,13 +36,20 @@ Where other enumeration tools are fire and forget (sometimes running hundereds o
 
 ## Demo
 
-## Kickoff
+## Build and Kickoff
+
+```
+git clone https://github.com/CoolHandSquid/TmuxRecon.git
+cd TmuxRecon
+./Build.sh
+
+cd /dir/you/want/to/enumerate/from
+HAC x.x.x.x -i tmux #Chose "tmux", "tilix", or "terminator" as your interface.
+```
 
 ## Methodology
 
 ## ProTips
-
-## Build
 
 ## How To Contribute
 
