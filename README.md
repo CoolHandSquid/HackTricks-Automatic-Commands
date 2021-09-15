@@ -67,8 +67,11 @@ HAC x.x.x.x -i tmux #Chose "tmux", "tilix", or "terminator" as your interface.
   ![alt text](https://github.com/CoolHandSquid/HAC/blob/main/Images/TmuxRecon_Variables_6.png)
 
 ## ProTips
+- Run multiple commands from a table at once by splitting the command numbers with commas. EX: 0,1,2 (Spaces and periods work aswell)
 
 ## How To Contribute
+[![Stargazers repo roster for @coolhandsquid/HAC](https://reporoster.com/stars/coolhandsquid/HAC)](https://github.com/coolhandsquid/HAC/stargazers)
+[![Forkers repo roster for coolhandsquid/HAC](https://reporoster.com/forks/coolhandsquid/HAC)](https://github.com/coolhandsquid/HAC/network/members)
 
 ### HAC Meta Language
 
