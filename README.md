@@ -13,7 +13,9 @@ HackTricks Automatic Commands (HAC) is an enumeration platform powered by [HackT
   - [About](#about)
   - [Philosophy](#philosophy)
   - [Demo](#demo)
-    - [Test](#test)
+    - [tmux](#tmux)
+    - [tilix](#tilix)
+    - [terminator](#terminator)
   - [Build and Kickoff](#build-and-kickoff)
   - [Methodology](#methodology)
   - [ProTips](#protips)
@@ -36,6 +38,14 @@ Where other enumeration tools are fire and forget (sometimes running hundereds o
 - can approach network penetration tests with confidence and reliability
 
 ## Demo
+
+### Tmux
+
+### Tilix
+
+### Terminator
+
+Still in development, coming soon!
 
 ## Build and Kickoff
 
