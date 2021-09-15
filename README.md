@@ -70,9 +70,35 @@ HAC x.x.x.x -i tmux #Chose "tmux", "tilix", or "terminator" as your interface.
 - Run multiple commands from a table at once by splitting the command numbers with commas. EX: 0,1,2 (Spaces and periods work aswell)
 
 ## How To Contribute
+What makes HackTricks Automatic Commands so powerful is the People! You can help contribute by sending a PR to book.hacktricks.xyz (into an existing HackTricks Automatic Commands code block or create your own), or sending and email to coolhandsquid@gmail.com.
 
 ### HAC Meta Language
+```
+Special Characters and Syntax
+Cmd_Command has a few special characters including &&&&, #, ##, ?, and {}.
 
+&&&&
+&&&& Anywhere in the command will split the line and start each command individually in separate tabs.
+Example: whoami &&&& id &&&& ifconfig will open three tabs and run the desired command in each. &&&& is useful if you initially run multiple separate commands every time you see a specific port open.
+
+# and ##
+"#" is for sending yourself notes to another tab.
+"#" can be useful if you don't want to run a command, but you want to give yourself copy-paste notes for manual enumeration.
+Set only the first character of the line to # if you want variables to be evaluated.
+Set the first two characters of the line to ## if you do not want variables to be evaluated.
+
+?
+"?" is for sending a question to the user. The responce will be set to a numbered variable.
+You can send multiple lines of questions for multiple variables.
+Example:
+?What is the location of the wp-login.php? Example: /Yeet/cannon/wp-login.php
+?What is a known password you would like to brute force?
+wpscan --url {Web_Proto}://{IP}{1} --enumerate ap,at,cb,dbe && wpscan --url {Web_Proto}://{IP}{1} --enumerate u,tt,t,vp --password {2} -e 
+
+{}
+{} is for grabbing a variable from TmuxRecon.
+Available variables can be viewed in the variables table.
+```
 ## Supporters
 [![Stargazers repo roster for @coolhandsquid/HAC](https://reporoster.com/stars/coolhandsquid/HAC)](https://github.com/coolhandsquid/HAC/stargazers)
 [![Forkers repo roster for coolhandsquid/HAC](https://reporoster.com/forks/coolhandsquid/HAC)](https://github.com/coolhandsquid/HAC/network/members)
