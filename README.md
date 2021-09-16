@@ -40,7 +40,7 @@ Where other enumeration tools are fire and forget (sometimes running hundereds o
 ### Tmux
 ![TmuxRecon](https://github.com/CoolHandSquid/HAC/blob/main/Images/TmuxRecon.gif)
 ### Tilix
-
+![Tire Fire](https://github.com/CoolHandSquid/HAC/blob/main/Images/TireFireFinal1.gif)
 ### Terminator
 Still in development, coming soon!
 
