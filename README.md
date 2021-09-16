@@ -56,9 +56,9 @@ HAC x.x.x.x -i tmux #Chose "tmux", "tilix", or "terminator" as your interface.
 
 ## Methodology
 1. Kickoff TmuxRecon (TmuxRecon 10.10.10.5).  
-  ![alt text](https://github.com/CoolHandSquid/HAC/blob/main/Images/TmuxRecon_Kickoff_1.png)
+  ![alt text](https://github.com/CoolHandSquid/HAC/blob/main/Images/HAC_Kickoff_1.png)
 2. C-b w (Move into the TmuxRecon Session).
-  ![alt text](https://github.com/CoolHandSquid/HAC/blob/main/Images/TmuxRecon_Kickoff_1.5.png)
+  ![alt text](https://github.com/CoolHandSquid/HAC/blob/main/Images/HAC_Kickoff_2.png)
 3. When prompted, type "Y" to kickoff a Quick, Banner, All-Port, and UDP nmap scan.
   ![alt text](https://github.com/CoolHandSquid/HAC/blob/main/Images/TmuxRecon_Init_2.png)
 4. Notice that new windows were opened kicking off those scans. Depending upon the ports returned, run scans for those ports.
