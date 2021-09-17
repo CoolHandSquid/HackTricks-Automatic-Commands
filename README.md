@@ -68,7 +68,7 @@ HAC x.x.x.x -i tmux #Chose "tmux", "tilix", or "terminator" as your interface.
 
 ## ProTips
 - Run multiple commands from a table at once by splitting the command numbers with commas. EX: 0,1,2 (Spaces and periods work aswell)
-![alt text](https://github.com/CoolHandSquid/HackTricks-Automatic-Commands/blob/TireFire_V3/Images/4_split.png)
+![alt text](https://github.com/CoolHandSquid/HackTricks-Automatic-Commands/blob/main/Images/4_split.png)
 - Tilix Specific ProTips
   - Ctrl+Z will bring you back to the main TireFire Page.
   - Ctrl+PageUp/PageDown will allow you to peruse through open tabs.
