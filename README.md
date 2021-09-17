@@ -46,8 +46,8 @@ Still in development, coming soon!
 
 ## Build and Kickoff
 ```
-git clone https://github.com/CoolHandSquid/HAC.git
-cd HAC
+git clone https://github.com/CoolHandSquid/HackTricks-Automatic-Commands.git
+cd HackTricks-Automatic-Commands
 ./Build.sh
 
 #cd /dir/you/want/to/enumerate/from
@@ -56,15 +56,15 @@ HAC x.x.x.x -i tmux #Chose "tmux", "tilix", or "terminator" as your interface.
 
 ## Methodology
 1. Kickoff TmuxRecon (TmuxRecon 10.10.10.5).  
-  ![alt text](https://github.com/CoolHandSquid/HAC/blob/main/Images/HAC_Kickoff_1.png)
+  ![alt text](https://github.com/CoolHandSquid/HackTricks-Automatic-Commands/blob/main/Images/HAC_Kickoff_1.png)
 2. C-b w (Move into the TmuxRecon Session).
-  ![alt text](https://github.com/CoolHandSquid/HAC/blob/main/Images/HAC_Kickoff_2.png)
+  ![alt text](https://github.com/CoolHandSquid/HackTricks-Automatic-Commands/blob/main/Images/HAC_Kickoff_2.png)
 3. When prompted, type "Y" to kickoff a Quick, Banner, All-Port, and UDP nmap scan.
-  ![alt text](https://github.com/CoolHandSquid/HAC/blob/main/Images/TmuxRecon_Init_2.png)
+  ![alt text](https://github.com/CoolHandSquid/HackTricks-Automatic-Commands/blob/main/Images/TmuxRecon_Init_2.png)
 4. Notice that new windows were opened kicking off those scans. Depending upon the ports returned, run scans for those ports.
-  ![alt text](https://github.com/CoolHandSquid/HAC/blob/main/Images/TmuxRecon_InAction_3.png)
+  ![alt text](https://github.com/CoolHandSquid/HackTricks-Automatic-Commands/blob/main/Images/TmuxRecon_InAction_3.png)
 5. Change variables as you need to suit your target (Example: HTTP running on port 8500).
-  ![alt text](https://github.com/CoolHandSquid/HAC/blob/main/Images/TmuxRecon_Variables_6.png)
+  ![alt text](https://github.com/CoolHandSquid/HackTricks-Automatic-Commands/blob/main/Images/TmuxRecon_Variables_6.png)
 
 ## ProTips
 - Run multiple commands from a table at once by splitting the command numbers with commas. EX: 0,1,2 (Spaces and periods work aswell)
@@ -142,16 +142,16 @@ Available variables are:
 Current variable values can be viewed in the variables table.
 ```
 ## Supporters
-[![Stargazers repo roster for @coolhandsquid/HAC](https://reporoster.com/stars/coolhandsquid/HAC)](https://github.com/coolhandsquid/HAC/stargazers)
-[![Forkers repo roster for coolhandsquid/HAC](https://reporoster.com/forks/coolhandsquid/HAC)](https://github.com/coolhandsquid/HAC/network/members)
+[![Stargazers repo roster for @coolhandsquid/HackTricks-Automatic-Commands](https://reporoster.com/stars/coolhandsquid/HackTricks-Automatic-Commands)](https://github.com/coolhandsquid/HackTricks-Automatic-Commands/stargazers)
+[![Forkers repo roster for coolhandsquid/HackTricks-Automatic-Commands](https://reporoster.com/forks/coolhandsquid/HackTricks-Automatic-Commands)](https://github.com/coolhandsquid/HackTricks-Automatic-Commands/network/members)
 
 ## Contact
 Please contact me at CoolHandSquid32@gmail.com for contribution, suggestions, and ideas!  
 <p align="center">
-<img src="https://github.com/CoolHandSquid/HAC/blob/main/Images/TireFireLogo1.png" width="200" />  
+<img src="https://github.com/CoolHandSquid/HackTricks-Automatic-Commands/blob/main/Images/TireFireLogo1.png" width="200" />  
 </p>
 <p align="center">
-<img src="https://github.com/CoolHandSquid/HAC/blob/main/Images/CoolHandSquid.jpg" width="200" /> 
+<img src="https://github.com/CoolHandSquid/HackTricks-Automatic-Commands/blob/main/Images/CoolHandSquid.jpg" width="200" /> 
 </p>
 
-<p align="center"><a href="https://github.com/coolhandsquid/HAC#Contents"><img src="https://github.com/CoolHandSquid/HAC/blob/main/Images/backToTopButton.png" alt="Back to top" height="29"/></a></p>
+<p align="center"><a href="https://github.com/coolhandsquid/HackTricks-Automatic-Commands#Contents"><img src="https://github.com/CoolHandSquid/HackTricks-Automatic-Commands/blob/main/Images/backToTopButton.png" alt="Back to top" height="29"/></a></p>
