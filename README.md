@@ -25,12 +25,12 @@
 
 ## About
 - HackTricks Automatic Commands (HAC) is an enumeration platform powered by [HackTricks](https://book.hacktricks.xyz)
-- Updated weekly from "HackTricks Automatic Commands" yaml code blocks in Hacktricks
+- Updated weekly from "HackTricks Automatic Commands" YAML code blocks in Hacktricks
 - Product of 19% Security Solutions
 
 ## Philosophy
-Where other enumeration tools are fire and forget (sometimes running hundereds of scans without your control), HAC is semi-automatic, meaning that you initiate every scan. This is a valuable trait becasue you...
-- are able to limit your footprint
+Where other enumeration tools are fire and forget (sometimes running hundreds of scans without your control), HAC is semi-automatic, meaning that you initiate every scan. Scan control is a valuable trait because you
+- can limit your footprint
 - end with a convenient list of all scans sent from HAC to the target
 - will gain more profitable experience on training boxes (OSCP, HTB, TryHackMe)
 - can approach network penetration tests with confidence and reliability
@@ -61,23 +61,23 @@ HAC x.x.x.x -i tmux #Chose "tmux", "tilix", or "terminator" as your interface.
   ![alt text](https://github.com/CoolHandSquid/HackTricks-Automatic-Commands/blob/main/Images/HAC_Kickoff_2.png)
 3. When prompted, type "Y" to kickoff a Quick, Banner, All-Port, and UDP nmap scan.
   ![alt text](https://github.com/CoolHandSquid/HackTricks-Automatic-Commands/blob/main/Images/TmuxRecon_Init_2.png)
-4. Notice that new windows were opened kicking off those scans. Depending upon the ports returned, run scans for those ports.
+4. Notice that new windows were opened, kicking off those scans. Depending upon the ports returned, run scans for those ports.
   ![alt text](https://github.com/CoolHandSquid/HackTricks-Automatic-Commands/blob/main/Images/TmuxRecon_InAction_3.png)
 5. Change variables as you need to suit your target (Example: HTTP running on port 8500).
   ![alt text](https://github.com/CoolHandSquid/HackTricks-Automatic-Commands/blob/main/Images/TmuxRecon_Variables_6.png)
 
 ## ProTips
-- Run multiple commands from a table at once by splitting the command numbers with commas. EX: 0,1,2 (Spaces and periods work aswell)
+- Run multiple commands from a table at once by splitting the command numbers with commas. EX: 0,1,2 (Spaces and periods work as well)
 ![alt text](https://github.com/CoolHandSquid/HackTricks-Automatic-Commands/blob/main/Images/4_split.png)
 - Tilix Specific ProTips
-  - Ctrl+Z will bring you back to the main TireFire Page.
+  - Ctrl+Z will bring you back to the central TireFire Page.
   - Ctrl+PageUp/PageDown will allow you to peruse through open tabs.
   - Ctrl+S will split the screen.
   - Ctrl+T for a new tab.
   - Ctrl+h for help.
 
 ## How To Contribute
-What makes HackTricks Automatic Commands so powerful is the People! You can help contribute by sending a PR to book.hacktricks.xyz (into an existing HackTricks Automatic Commands yaml code block or create your own), or sending and email to coolhandsquid@gmail.com. Simply follow this template when creating your own. Notice that
+What makes HackTricks Automatic Commands so powerful is the People! You can help contribute by sending a PR to book.hacktricks.xyz (into an existing HackTricks Automatic Commands YAML code block or create your own), or shooting an email to coolhandsquid@gmail.com. Simply follow this template when creating your own. Notice that
 - the title must be correct (It is used for parsing)
 - each entry has a different name
 - each entry has either a "Note" or a "Command" section. A Command section will get executed, where a Note section will only be read to screen
@@ -122,8 +122,8 @@ Entry_2:
 Example: whoami &&&& id &&&& ifconfig will open three tabs and run the desired command in each. &&&& is useful if you initially run multiple separate commands every time you see a specific port open.
 
 ?
-"?" is for sending a question to the user. The responce will be set to a numbered variable.
-You can send multiple lines of questions for multiple variables.
+"?" is for sending a question to the user. The response will be set to a numbered variable.
+You can send multiple lines of questions for numerous variables.
 Example:
 ?What is the location of the wp-login.php? Example: /Yeet/cannon/wp-login.php
 ?What is a known password you would like to brute force?
@@ -146,14 +146,14 @@ Available variables are:
   Big_Dirlist
   Small_Dirlist
   Tool_Dir
-Current variable values can be viewed in the variables table.
+The current variable values can be viewed in the variables table.
 ```
 ## Supporters
 [![Stargazers repo roster for @coolhandsquid/HackTricks-Automatic-Commands](https://reporoster.com/stars/coolhandsquid/HackTricks-Automatic-Commands)](https://github.com/coolhandsquid/HackTricks-Automatic-Commands/stargazers)
 [![Forkers repo roster for coolhandsquid/HackTricks-Automatic-Commands](https://reporoster.com/forks/coolhandsquid/HackTricks-Automatic-Commands)](https://github.com/coolhandsquid/HackTricks-Automatic-Commands/network/members)
 
 ## Contact
-Please contact me at CoolHandSquid32@gmail.com for contribution, suggestions, and ideas!  
+Please contact me at CoolHandSquid32@gmail.com for contributions, suggestions, and ideas!  
 <p align="center">
 <img src="https://github.com/CoolHandSquid/HackTricks-Automatic-Commands/blob/main/Images/TireFireLogo1.png" width="200" />  
 </p>
