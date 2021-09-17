@@ -7,8 +7,8 @@ if [[ "$(id -u)" -ne "0" ]]; then
 fi
 
 #Verify in HAC directory
-if [[ "$(pwd | awk -F"/" '{print$NF}')" != "HAC" ]]; then
-	echo "You must be in the HAC directory to run this script (case sensitive)."
+if [[ "$(pwd | awk -F"/" '{print$NF}')" != "HackTricks-Automatic-Commands" ]]; then
+	echo "You must be in the HackTricks-Automatic-Commands directory to run this script."
 	exit 1
 fi
 
