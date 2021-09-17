@@ -38,9 +38,9 @@ Where other enumeration tools are fire and forget (sometimes running hundereds o
 ## Demo
 
 ### Tmux
-![TmuxRecon](https://github.com/CoolHandSquid/HAC/blob/main/Images/TmuxRecon.gif)
+![TmuxRecon](https://github.com/CoolHandSquid/HackTricks-Automatic-Commands/blob/main/Images/TmuxRecon.gif)
 ### Tilix
-![Tire Fire](https://github.com/CoolHandSquid/HAC/blob/main/Images/TireFireFinal1.gif)
+![Tire Fire](https://github.com/CoolHandSquid/HackTricks-Automatic-Commands/blob/main/Images/HAC_tilix_demo.gif)
 ### Terminator
 Still in development, coming soon!
 
