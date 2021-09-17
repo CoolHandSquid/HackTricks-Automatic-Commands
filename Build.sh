@@ -21,6 +21,7 @@ chmod -R 755 dirsearch/
 
 rm /usr/bin/HAC 2> /dev/null
 ln -s "$PWD/HAC.py" "/usr/bin/HAC"
+ln -s "$PWD/HAC.py" "/usr/bin/hacktricksautomaticcommands"
 
 apt update
 apt-get install gobuster seclists dconf-cli g++ pip libreoffice smtp-user-enum leafpad enum4linux smbmap tilix dbus-x11 -y
