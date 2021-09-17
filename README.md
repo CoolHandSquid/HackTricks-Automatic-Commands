@@ -68,6 +68,13 @@ HAC x.x.x.x -i tmux #Chose "tmux", "tilix", or "terminator" as your interface.
 
 ## ProTips
 - Run multiple commands from a table at once by splitting the command numbers with commas. EX: 0,1,2 (Spaces and periods work aswell)
+![alt text](https://github.com/CoolHandSquid/HackTricks-Automatic-Commands/blob/TireFire_V3/Images/4_split.png)
+- Tilix Specific ProTips
+  - Ctrl+Z will bring you back to the main TireFire Page.
+  - Ctrl+PageUp/PageDown will allow you to peruse through open tabs.
+  - Ctrl+S will split the screen.
+  - Ctrl+T for a new tab.
+  - Ctrl+h for help.
 
 ## How To Contribute
 What makes HackTricks Automatic Commands so powerful is the People! You can help contribute by sending a PR to book.hacktricks.xyz (into an existing HackTricks Automatic Commands yaml code block or create your own), or sending and email to coolhandsquid@gmail.com. Simply follow this template when creating your own. Notice that
