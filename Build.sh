@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-Verify running as root
+#Verify running as root
 if [[ "$(id -u)" -ne "0" ]]; then
 	echo "You must be root to run this script."
 	exit 1
