@@ -28,7 +28,7 @@ put authorized_keys
 !!!now you can ssh as the user who's directory you were in!!!
 
 https://book.hacktricks.xyz/pentesting/pentesting-ftp",Verified,1
-FTP,21,File Transfer Protocol,Banner Grab,Grab Banner,telnet -vn {IP} 21,Verified,2
+FTP,21,File Transfer Protocol,Banner Grab,Grab Banner,telnet -n {IP} 21,Verified,2
 FTP,21,File Transfer Protocol,Cert Grab,Get Certificate if any,openssl s_client -connect {IP}:21 -starttls ftp,Verified,3
 FTP,21,File Transfer Protocol,Browser Connection,Connect with Browser (Firefox),#ftp://anonymous:anonymous@{IP},Verified,4
 Telnet,23,Telnet,Notes,Telnet Notes,"#wireshark to hear creds being passed
@@ -143,7 +143,7 @@ Kerberos,88,AD Domain Authentication Service,With Users,Brute Force with Usernam
 Kerberos,88,AD Domain Authentication Service,With Creds,Attempt to get a list of user service principal names,#https://rootsecdev.medium.com/installing-impacket-on-kali-linux-2020-1d9ad69d10bb        GetUserSPNs.py -request -dc-ip {IP} active.htb/svc_tgs,Verified,3
 POP,110995,Post Office Protocol,Banner Grab 110,Grab Banner,nc -nv {IP} 110,Verified,1
 POP,110995,Post Office Protocol,Banner Grab 995,Grab Banner Secure,openssl s_client -connect {IP}:995 -crlf -quiet,Verified,2
-POP,110995,Post Office Protocol,Nmap,Scan for pop info,"nmap --scripts ""pop3-capabilities or pop3-ntlm-info"" -sV -port 110 {IP}",Verified,3
+POP,110995,Post Office Protocol,Nmap,Scan for pop info,"nmap --script ""pop3-capabilities or pop3-ntlm-info"" -sV -p 110 {IP}",Verified,3
 PM,111,Portmapper,rpcinfo,May give netstat-type info,rpcinfo {Domain_Name},Verified,1
 PM,111,Portmapper,nmap,May give netstat-type info,nmap -sSUC -p 111 {IP},Verified,2
 Ident,113,Identification Protocol,Ident User Enum,Enumerate Users,#apt install ident-user-enum    ident-user-enum {IP} 22 23 139 445 (try all open ports),Verified,1
@@ -218,7 +218,7 @@ showmount 10.10.10.180      ~or~showmount -e 10.10.10.180
 mount -t nfs -o ver=2 10.10.10.180:/home /mnt/
 cd /mnt
 nano into /etc/passwd and change the uid (probably 1000 or 1001) to match the owner of the files if you are not able to get in",Verified,1
-NFS,2049,Network File System,Nmap Scan,Nmap with NFS scripts,"nmap --script=nfs-ls.nse,nfs-showmount.nse,nfs-status.nse -p 2049 {IP}",Verified,2
+NFS,2049,Network File System,Nmap Scan,Nmap with NFS scripts,"nmap –script=nfs-ls.nse,nfs-showmount.nse,nfs-statfs.nse -p 2049 {IP}",Verified,2
 MySql,3306,MySql,Nmap Scan,MySql Nmap Scan,"nmap --script=mysql-databases.nse,mysql-empty-password.nse,mysql-enum.nse,mysql-info.nse,mysql-variables.nse,mysql-vuln-cve2012-2122.nse {IP} -p 3306",Verified,1
 MySql,3306,MySql,MySql,Attempt to connect to mysql server,mysql -h {IP} -u {Username}@localhost,Verified,2
 RDP,3389,Remote Desktop Protocol,Nmap ,Nmap scan to find NTLM Windows Info,"nmap --script ""rdp-enum-encryption or rdp-vuln-ms12-020 or rdp-ntlm-info"" -p 3389 -T4 {IP}",Verified,1
