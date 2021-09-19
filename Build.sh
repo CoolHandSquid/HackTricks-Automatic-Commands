@@ -18,8 +18,7 @@ END
 
 #Make HAC links
 rm /usr/bin/HAC 2> /dev/null
-rm "/usr/bin/HAC"
-rm "/usr/bin/hacktricksautomaticcommands"
+rm /usr/bin/hacktricksautomaticcommands 2> /dev/null
 ln -s "$PWD/HAC.py" "/usr/bin/HAC"
 ln -s "$PWD/HAC.py" "/usr/bin/hacktricksautomaticcommands"
 
