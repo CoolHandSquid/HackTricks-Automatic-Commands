@@ -16,10 +16,10 @@ cat <<'END'
 HAC is installing...
 END
 
-if [[ ! -d 'dirsearch' ]]; then git clone https://github.com/maurosoria/dirsearch.git; fi
-chmod -R 755 dirsearch/
-
+#Make HAC links
 rm /usr/bin/HAC 2> /dev/null
+rm "/usr/bin/HAC"
+rm "/usr/bin/hacktricksautomaticcommands"
 ln -s "$PWD/HAC.py" "/usr/bin/HAC"
 ln -s "$PWD/HAC.py" "/usr/bin/hacktricksautomaticcommands"
 
@@ -27,6 +27,15 @@ apt update
 apt-get install gobuster seclists dconf-cli g++ pip libreoffice smtp-user-enum leafpad enum4linux smbmap tilix dbus-x11 -y
 wait
 python3 -m pip install pandasql psutil
+
+if [[ ! -d 'dirsearch' ]]; then git clone https://github.com/maurosoria/dirsearch.git; fi
+chmod -R 755 dirsearch/
+if [[ ! -d 'impacket' ]]; then git clone https://github.com/SecureAuthCorp/impacket.git; fi
+chmod -R 755 impacket/
+cd impacket
+python3 -m pip install -r ./requirements.txt
+python3 ./setup.py install
+cd ..
 
 cp "$PWD/Tire_Fire.jpg" "/root/Pictures/Tire_Fire.jpg"
 dconf load /com/gexperts/Tilix/ < tilix.dconf
