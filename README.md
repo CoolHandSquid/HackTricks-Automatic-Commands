@@ -55,9 +55,9 @@ HAC x.x.x.x -i tmux #Chose "tmux", "tilix", or "terminator" as your interface.
 ```
 
 ## Methodology
-1. Kickoff TmuxRecon (TmuxRecon 10.10.10.5).  
+1. Kickoff HAC (HAC 10.10.10.5 -i tmux).  
   ![alt text](https://github.com/CoolHandSquid/HackTricks-Automatic-Commands/blob/main/Images/HAC_Kickoff_1.png)
-2. C-b w (Move into the TmuxRecon Session).
+2. C-b w (Move into the HAC tmux Session).
   ![alt text](https://github.com/CoolHandSquid/HackTricks-Automatic-Commands/blob/main/Images/HAC_Kickoff_2.png)
 3. When prompted, type "Y" to kickoff a Quick, Banner, All-Port, and UDP nmap scan.
   ![alt text](https://github.com/CoolHandSquid/HackTricks-Automatic-Commands/blob/main/Images/TmuxRecon_Init_2.png)
@@ -70,7 +70,7 @@ HAC x.x.x.x -i tmux #Chose "tmux", "tilix", or "terminator" as your interface.
 - Run multiple commands from a table at once by splitting the command numbers with commas. EX: 0,1,2 (Spaces and periods work as well)
 ![alt text](https://github.com/CoolHandSquid/HackTricks-Automatic-Commands/blob/main/Images/4_split.png)
 - Tilix Specific ProTips
-  - Ctrl+Z will bring you back to the central TireFire Page.
+  - Ctrl+Z will bring you back to the main table Page.
   - Ctrl+PageUp/PageDown will allow you to peruse through open tabs.
   - Ctrl+S will split the screen.
   - Ctrl+T for a new tab.
