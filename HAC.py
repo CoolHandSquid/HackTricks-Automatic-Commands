@@ -7,10 +7,10 @@ import shlex
 import subprocess
 from netaddr import *
 
-parser  = argparse.ArgumentParser()
 parser = argparse.ArgumentParser(description='HackTricks Automatic Commands is Powered by book.hacktricks.xyz.')
 parser.add_argument("IP", help="IP adress or hostname of the target", type=str)
 parser.add_argument('-i', '--interface', default='tmux', help='Interact with HAC via "tmux", "tilix", or "terminator". tmux is default')
+parser.add_argument('-u', '--updatedb', action="store_true", help='Update to the latest HAC database') 
 args    = parser.parse_args()
 
 cwd     = os.getcwd()
@@ -23,6 +23,11 @@ try:
 except:
     hostname = IP = args.IP
 
+def init_updatedb():
+    print("Updating database")
+    subprocess.run(shlex.split("curl https://raw.githubusercontent.com/CoolHandSquid/HackTricks-Automatic-Commands/main/Main.csv --output {}/Main.csv".format(hacd)), stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+    print("Updating database complete")
+
 def init_HAC_tmux():
     hassession  = subprocess.run(shlex.split("tmux has-session -t HAC_{}".format(hostname)), stderr=subprocess.DEVNULL)
     if hassession.returncode == 0:
@@ -33,7 +38,7 @@ def init_HAC_tmux():
     
     subprocess.run(shlex.split("tmux new-session -s HAC_{} -n Main -c {} -d".format(hostname, cwd)))
     subprocess.run(shlex.split("tmux send-keys -t HAC_{}:0.0 '{}HAC_tmux.py {} {} {} {}' Enter".format(hostname, hacd, IP, hostname, cwd, hacd)))
-    print("HackTricks Automatic Commands session for {} named HAC_{} has started successfully!\n\nList of running Tmux sessions:".format(IP, hostname))
+    print("HackTricks Automatic Commands session for {} named HAC_{} has started successfully!\nList of running Tmux sessions:".format(IP, hostname))
     subprocess.run(shlex.split("tmux ls"))
 
 def init_HAC_tilix():
@@ -50,13 +55,17 @@ def init_HAC_tilix():
 def init_HAC_terminator():
     print("Still in development. Hang tight!!")
 
-if args.interface == "tmux":
-    init_HAC_tmux()
-elif args.interface == "tilix":
-    init_HAC_tilix()
-elif args.interface == "terminator":
-    init_HAC_terminator()
-else:
-    print("That interface is not valid. Please chose tmux, tilix, or terminator (ex: --interface tilix).")
-    exit()
+if __name__ == "__main__":
+    if args.updatedb == True:
+        init_updatedb()
+    if args.interface == "tmux":
+        init_HAC_tmux()
+    elif args.interface == "tilix":
+        init_HAC_tilix()
+    elif args.interface == "terminator":
+        init_HAC_terminator()
+    else:
+        print("That interface is not valid. Please chose tmux, tilix, or terminator (ex: --interface tilix).")
+        exit()
+
 
