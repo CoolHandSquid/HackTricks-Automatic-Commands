@@ -15,7 +15,6 @@
   - [Demo](#demo)
     - [Tmux](#tmux)
     - [Tilix](#tilix)
-    - [Terminator](#terminator)
   - [Build and Kickoff](#build-and-kickoff)
   - [Methodology](#methodology)
   - [ProTips](#protips)
@@ -41,8 +40,6 @@ Where other enumeration tools are fire and forget (sometimes running hundreds of
 ![TmuxRecon](https://github.com/CoolHandSquid/HackTricks-Automatic-Commands/blob/main/Images/TmuxRecon.gif)
 ### Tilix
 ![Tire Fire](https://github.com/CoolHandSquid/HackTricks-Automatic-Commands/blob/main/Images/HAC_tilix_demo.gif)
-### Terminator
-Still in development, coming soon!
 
 ## Build and Kickoff
 ```
@@ -51,7 +48,7 @@ cd HackTricks-Automatic-Commands
 ./Build.sh
 
 #cd /dir/you/want/to/enumerate/from
-HAC x.x.x.x -i tmux #Chose "tmux", "tilix", or "terminator" as your interface.
+HAC x.x.x.x -i tmux #Chose "tmux" or "tilix" as your interface.
 ```
 
 ## Methodology

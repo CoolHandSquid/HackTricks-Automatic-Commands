@@ -9,7 +9,7 @@ from netaddr import *
 
 parser = argparse.ArgumentParser(description='HackTricks Automatic Commands is Powered by book.hacktricks.xyz.')
 parser.add_argument("IP", help="IP adress or hostname of the target", type=str)
-parser.add_argument('-i', '--interface', default='tmux', help='Interact with HAC via "tmux", "tilix", or "terminator". tmux is default')
+parser.add_argument('-i', '--interface', default='tmux', help='Interact with HAC via "tmux" or "tilix". tmux is default')
 parser.add_argument('-u', '--updatedb', action="store_true", help='Update to the latest HAC database') 
 args    = parser.parse_args()
 
@@ -51,10 +51,6 @@ def init_HAC_tilix():
     
     os.system("tilix --maximize -t 'HackTricks Automatic Commands  Main Page' -x $SHELL -c '{}HAC_tilix.py {} ; $SHELL'".format(hacd, IP))
     
-
-def init_HAC_terminator():
-    print("Still in development. Hang tight!!")
-
 if __name__ == "__main__":
     if args.updatedb == True:
         init_updatedb()
@@ -62,10 +58,8 @@ if __name__ == "__main__":
         init_HAC_tmux()
     elif args.interface == "tilix":
         init_HAC_tilix()
-    elif args.interface == "terminator":
-        init_HAC_terminator()
     else:
-        print("That interface is not valid. Please chose tmux, tilix, or terminator (ex: --interface tilix).")
+        print("That interface is not valid. Please chose tmux or tilix(ex: --interface tilix).")
         exit()
 
 
