@@ -8,7 +8,7 @@ fi
 
 #Verify in HAC directory
 if [[ "$(pwd | awk -F"/" '{print$NF}')" != "HackTricks-Automatic-Commands" ]]; then
-	echo "You must be in the HackTricks-Automatic-Commands directory to run this script."
+	echo "You must be in the HackTricks-Automatic-Commands directory to run this script (Case sensitive)."
 	exit 1
 fi
 
