@@ -126,6 +126,7 @@ print(s.run_ps('ipconfig'))
 
 https://book.hacktricks.xyz/pentesting/pentesting-winrm
 ",Verified,1
+WinRM,5985,Windows Remote Managment,Hydra Brute Force,Need User,hydra -t 1 -V -f -l {Username} -P {Big_Passwordlist} rdp://{IP},Verified,2
 MSSQL,1433,Microsoft SQL Server,Notes,Notes for MSSQL,"#Microsoft SQL Server is a relational database management system developed by Microsoft. As a database server, it is a software product with the primary function of storing and retrieving data as requested by other software applications—which may run either on the same computer or on another computer across a network (including the Internet).
 
 #sqsh -S 10.10.10.59 -U sa -P GWE3V65#6KFH93@4GWTG2G
@@ -266,6 +267,7 @@ https://book.hacktricks.xyz/pentesting/pentesting-smb
 SMB,"137,138,139",Server Message Block,Enum4Linux,General SMB Scan,enum4linux -a {IP},Verified,2
 SMB,"137,138,139",Server Message Block,Nmap SMB Scan 1,SMB Vuln Scan With Nmap,"nmap -p 139,445 -vv -Pn --script=smb-vuln-cve2009-3103.nse,smb-vuln-ms06-025.nse,smb-vuln-ms07-029.nse,smb-vuln-ms08-067.nse,smb-vuln-ms10-054.nse,smb-vuln-ms10-061.nse,smb-vuln-ms17-010.nse {IP}",Verified,3
 SMB,"137,138,139",Server Message Block,Nmap Smb Scan 2,SMB Vuln Scan With Nmap (Less Specific),"nmap --script smb-vuln* -Pn -p 139,445 {IP}",Verified,4
+SMB,"137,138,139",Server Message Block,Hydra Brute Force,Need User,hydra -t 1 -V -f -l {Username} -P {Big_Passwordlist} {IP} smb,Verified,5
 POP,110,Post Office Protocol,Notes,Notes for POP,"#Post Office Protocol (POP) is a type of computer networking and Internet standard protocol that extracts and retrieves email from a remote mail server for access by the host machine. POP is an application layer protocol in the OSI model that provides end users the ability to fetch and receive email (from here).
 The POP clients generally connect, retrieve all messages, store them on the client system, and delete them from the server. There are 3 versions of POP, but POP3 is the most used one.
 
