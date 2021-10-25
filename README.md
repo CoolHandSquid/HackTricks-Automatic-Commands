@@ -1,4 +1,4 @@
-# **THIS PROJECT HAS MOVED!!!**
+# **!!THIS PROJECT HAS MOVED!!!**
 HackTricks Automatic Commands has been integrated into [TireFire](https://github.com/CoolHandSquid/TireFire).
 This repository Will no longer be updated or supported. Use TireFire in the future. Thank you for your support!
 
