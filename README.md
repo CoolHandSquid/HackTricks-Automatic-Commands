@@ -1,7 +1,6 @@
-# **!!THIS PROJECT HAS MOVED!!!**
-HackTricks Automatic Commands has been integrated into [TireFire](https://github.com/CoolHandSquid/TireFire).
-This repository Will no longer be updated or supported. Use TireFire in the future. Thank you for your support!
-
+<h1 align="center">!!THIS PROJECT HAS MOVED!!</H1>
+<p align="center">HackTricks Automatic Commands has been integrated into <a href="https://github.com/CoolHandSquid/TireFire">TireFire</a>.</p>
+<p align="center">This repository Will no longer be updated or supported. Use TireFire in the future. Thank you for your support!</p>
 <h1 align="center">HackTricks Automatic Commands "HAC"</h1>
 <p align="center">HackTricks Automatic Commands (HAC) is an enumeration platform powered by <a href="https://book.hacktricks.xyz">HackTricks</a>!</p>
 <p align="center">
